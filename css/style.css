@@ -92,13 +92,13 @@ body {
   color: var(--interact-color);
 }
 
-.navigation .studio:hover,
-.navigation .studio:focus {
-  color: var(--pressed-state-color);
-}
-
 .studio {
   color: var(--interact-color);
+}
+
+.logo:hover .studio,
+.logo:focus .studio {
+  color: var(--pressed-state-color);
 }
 
 .navigation-list {
@@ -225,12 +225,12 @@ body {
 .footer-nav {
 }
 
-.footer-nav .studio {
+.footer-nav > .logo:hover,
+.footer-nav > .logo:focus {
   color: var(--secondary-text-color);
 }
 
-.footer .logo:hover,
-.footer .logo:focus {
+.footer-nav .studio {
   color: var(--secondary-text-color);
 }
 
